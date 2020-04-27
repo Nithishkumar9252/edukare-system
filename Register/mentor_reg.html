@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title> Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+   <script src="reg.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylereg.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+        <header class="main_menu home_menu" style="background-color: white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src=""> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent" style="margin-left: 300px;
+                            ">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1" href="#">Home</a>
+                                </li>
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1" href="#">About</a>
+                                </li>
+                                
+                                <li class="d-none d-lg-block">
+                                
+                                    <li class="nav-item dropdown">
+                                        <a class="btn_1" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Login
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="">Admin</a>
+                                            <a class="dropdown-item" href="">Student</a>
+                                            <a class="dropdown-item" href="">Mentor</a>
+                                            <a class="dropdown-item" href="">Elements</a>
+
+                                        </div>
+                                    </li>
+                                </li>
+                                
+                                
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1 btn-lg" href="#">Get a Quote</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container Stureg1">
+    <center><h1 class="well">Create your account</h1></center>
+</div>
+<div class="container Stureg">
+    <div class="col-lg-12 well">
+    
+                <form name="RegForm" onsubmit="return GG()" method="post">
+                    <div class="col-sm-12">
+                        <h2 style="text-align: center;">Mentor Details</h2>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Enter First Name Here.." class="form-control" name="Name">
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Enter Last Name Here.." class="form-control" name="LName">
+                            </div>
+                        </div>                 
+                        <div class="row"> 
+                        <div class="form-group col-sm-6">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="" class="form-control" name="DOB">
+                        </div> 
+                        <div class="col-sm-6 form-group">
+                                <label>Gender</label>
+                                <br>
+                               <label class="radio-inline"><input type="radio" name="optradio" checked>Male</label>
+<label class="radio-inline"><input type="radio" name="optradio">Female</label>
+<label class="radio-inline"><input type="radio" name="optradio">Rather Not Say</label>
+  
+                    </div>
+                </div>
+                <!--        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label>Board</label>
+                                <select class="custom-select" name="Board">
+  <option selected>select..</option>
+  <option value="1">ICSE</option>
+  <option value="2">CBSE</option>
+  <option value="3">SSC</option>
+</select></div>  
+                            <div class="col-sm-4 form-group" >
+                                <label>School</label>
+                                <select class="custom-select" name="School" >
+  <option selected>select..</option>
+  <option value="1">ABC</option>
+  <option value="2">PQR</option>
+  <option value="3">XYZ</option>
+</select></div>  
+                            <div class="col-sm-4 form-group" >
+                                <label>Class</label>
+          <select class="custom-select" name="Class">
+  <option selected>select..</option>
+  <option value="1">12</option>
+  <option value="2">11</option>
+  <option value="3">10</option>
+</select>                  </div>  
+                                 
+                        </div>
+                       --> <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label>City</label>
+                                <input type="text" name="City" class="form-control" placeholder="Enter City Name...">
+                                </div>      
+                            <div class="col-sm-4 form-group">
+                                <label>State</label>
+                               <input type="text" name="State"  class="form-control" placeholder="Enter State Name...">
+                           </div>  <div class="col-sm-4 form-group">
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="Enter Phone Number Here.." class="form-control" name="phone">
+                    </div>   
+                            </div>  
+                          
+                     
+                    <div class="row">     
+                    <div class="col-sm-6 form-group">
+                        <label>Email Address</label>
+                        <input type="text" placeholder="Enter Email Address Here.." class="form-control" name="EMail">
+                    </div>  
+                    <div class="col-sm-6 form-group">
+                        <label>Username</label>
+                        <input type="text" placeholder="Username" class="form-control" >
+                    </div>  
+                    
+                    </div>
+                    <div class="row">     
+                    <div class="col-sm-6 form-group">
+                        <label>Password</label>
+                        <input type="text" placeholder="Password" class="form-control" name="Password">
+                    </div>  
+                    <div class="col-sm-6 form-group">
+                        <label>Confirm Password</label>
+                        <input type="text" placeholder="Confirm Password" class="form-control" name="cp">
+                    </div>  
+                    
+                    </div>
+                    <div class="row">
+                        <h3 style="color:#3dae9d;">Upload Your Documents:</h3><br><br>
+                    </div>
+                    <div class="row">     
+                    <div class="col-sm-4 form-group">
+                     
+    <label for="exampleFormControlFile1">Educational Certificate</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1" >
+   </div>  
+                    <div class="col-sm-4 form-group">
+                   <label for="exampleFormControlFile1">Pan Card</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1" >
+   
+                    </div>  
+                    <div class="col-sm-4 form-group">
+                   <label for="exampleFormControlFile1">Aadhaar Card</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1" >
+   
+                    </div>  
+                    
+                    </div>
+                    
+                    
+                    <button type="submit" class="btn btn-lg btn-block btn-success">Submit</button>                   
+                    </div>
+                </form> 
+                
+    </div>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
