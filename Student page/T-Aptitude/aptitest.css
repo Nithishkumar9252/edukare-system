@@ -1,0 +1,49 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: grey;
+    padding: 10%;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom right, #4000d4, #0051ff);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom right, #4000d4, #0051ff);
+  }
+body{
+    background-color: #0077ea;
+    font-family: 'Muli', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+#quiz1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 700px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.loadermain{
+    margin-top: 15%;
+    margin-bottom: auto;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+.loadersure{
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.buttons{
+    text-align: center;
+}

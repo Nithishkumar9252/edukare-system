@@ -1,0 +1,32 @@
+.navbar{
+            background-image: linear-gradient(to bottom right, #75cd6f, #3dae9d);
+        }
+ .reg{
+ 	 background-image: linear-gradient(to bottom right, #75cd6f, #3dae9d);
+ 	 
+
+	padding:20px; 
+	font-family: 'Helvetica', serif; 
+	box-shadow: 5px 5px 7px 5px #888888;  	 
+
+ }
+ .reg select{
+ 	margin: 10px;
+ }
+ .btn1{
+ 	margin: 20px;
+ }
+ .reg td{
+ 	font-size: 20px;
+ }
+ .reg2{
+ 	background-image: linear-gradient(to bottom right, #75cd6f, #3dae9d);
+
+ }
+ .head{
+ 	font-family: sans-serif;
+ 	margin: 10px;
+	border-radius:40px 10px; 
+ 	padding: 10px;
+ 	font-size: 40px;
+ }
