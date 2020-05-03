@@ -133,24 +133,39 @@
 
     <div class="container-fluid">
         <div class="d-sm-flex justify-content-between align-items-center mb-4">
-            <h3 class="text-dark mb-0">Dashboard</h3><button class="btn btn-primary btn-sm d-none d-sm-inline-block" onclick="downloadPdf()" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</button>
+            <h3 class="text-dark mb-0">Overall School Report</h3><button class="btn btn-primary btn-sm d-none d-sm-inline-block" onclick="downloadPdf()" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</button>
         </div>
         <div id="whiteboxbg">
            <div class="container-fluid">
                 <div class="row">
                     <div class="col align-self-start">
-                            <h5 class="heading">Academic Performance</h5>    
+                            <h5 class="heading"> Overall Schoool Academic Performance</h5>    
                     </div>
                     <div class="col align-self-center" style="text-align: center;">
                         <div class="btn-group" style="text-align: center;">
                             <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Select Exam
                             </button>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu" style="text-align: center;">
                                 <a class="dropdown-item" href="#">MID-1</a>
                                 <a class="dropdown-item" href="#">MID-2</a>
                                 <a class="dropdown-item" href="#">Half-Yearly</a>
                                 <a class="dropdown-item" href="#">Final</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Overall Performance</a>
+                            </div>
+                            <div class="btn-group" style="text-align: center; margin-left: 10%;">
+                                <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Select Year
+                                </button>
+                                <div class="dropdown-menu" style="text-align: center;">
+                                    <a class="dropdown-item" href="#">2016</a>
+                                    <a class="dropdown-item" href="#">2017</a>
+                                    <a class="dropdown-item" href="#">2018</a>
+                                    <a class="dropdown-item" href="#">2019</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Current Year</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -162,11 +177,9 @@
                         </div>
                     </div>
                     <div class="col align-self-end">
-                        <h6 style="text-align: center;">Percentage: 69%</h6>
-                        <h6 style="text-align: center;">Average Marks: 34/100</h6>
-                        <h6 style="text-align: center;">Total Marks: 365/600</h6>
-                        </br>
-                        <h6 style="text-align: center;">Remarks: Average, need to improve a lot</h6>
+                        <h6 style="text-align: center;">Overall School Percentage: 69%</h6>
+                        <h6 style="text-align: center;">Pass Percentage: 69%</h6>
+                        <h6 style="text-align: center;">Fail Percentage: 69%</h6>
                     </div>
                 </div>
            </div>
@@ -176,7 +189,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <h5 class="heading">Aptitude Progress</h5>
+                        <h5 class="heading">Overall School Aptitude</h5>
                         <div class="card-body">
                             <h4 class="small font-weight-bold">Diagramatic reasoning<span class="float-right">70%</span></h4>
                             <div class="progress mb-4">
@@ -200,14 +213,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col align-self-center">
+                    <div class="col align-self-center" style="text-align: center;">
+
+                        <div class="btn-group" style="align-items: center; margin-bottom: 10%;">
+                            <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Year
+                            </button>
+                            <div class="dropdown-menu" style="text-align: center;">
+                                <a class="dropdown-item" href="#">2016</a>
+                                <a class="dropdown-item" href="#">2017</a>
+                                <a class="dropdown-item" href="#">2018</a>
+                                <a class="dropdown-item" href="#">2019</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Current Year</a>
+                            </div>
+                        </div>
+
                         <canvas id="Apti"></canvas>
                     </div>
                 </div>
             </div>
         </div>
         </br>
-        <div id="whiteboxbg">
+        <!--<div id="whiteboxbg">
             <div class="container-fluid">
                 <div class="row">
                         <h5 class="heading">Personal Performance</h5>
@@ -266,10 +294,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         </br></br>
-    </div>
-    
+    </div> 
 
     
 
