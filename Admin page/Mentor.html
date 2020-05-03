@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Product name - Views</title>
+    <title>Product name - Mentors Menu</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -21,10 +21,9 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="student.html"><i class="fas fa-check-circle"></i><span>Report</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Test.html"><i class="fas fa-brain"></i><span>Test</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="Planner.html"><i class="fas fa-table"></i><span>Planner</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="register.html"><i class="fas fa-chalkboard-teacher"></i><span>Mentors</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Overall report.html"><i class="fas fa-check-circle"></i><span>Overall Report</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="StudentDetails.html"><i class="fas fa-graduation-cap"></i><span>Students/class</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="Mentor.html"><i class="fas fa-chalkboard-teacher"></i><span>Mentors</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -134,141 +133,28 @@
 
     <div class="container-fluid">
         <div class="d-sm-flex justify-content-between align-items-center mb-4">
-            <h3 class="text-dark mb-0">Dashboard</h3><button class="btn btn-primary btn-sm d-none d-sm-inline-block" onclick="downloadPdf()" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</button>
+            <h3 class="text-dark mb-0">Mentor's Menu</h3>
         </div>
-        <div id="whiteboxbg">
-           <div class="container-fluid">
-                <div class="row">
-                    <div class="col align-self-start">
-                            <h5 class="heading">Academic Performance</h5>    
-                    </div>
-                    <div class="col align-self-center" style="text-align: center;">
-                        <div class="btn-group" style="text-align: center;">
-                            <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Select Exam
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">MID-1</a>
-                                <a class="dropdown-item" href="#">MID-2</a>
-                                <a class="dropdown-item" href="#">Half-Yearly</a>
-                                <a class="dropdown-item" href="#">Final</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col align-self-start">
-                        <div class="SM">
-                            <canvas id="subjm"></canvas>
-                        </div>
-                    </div>
-                    <div class="col align-self-end">
-                        <h6 style="text-align: center;">Percentage: 69%</h6>
-                        <h6 style="text-align: center;">Average Marks: 34/100</h6>
-                        <h6 style="text-align: center;">Total Marks: 365/600</h6>
-                        </br>
-                        <h6 style="text-align: center;">Remarks: Average, need to improve a lot</h6>
-                    </div>
-                </div>
-           </div>
-        </div>    
-        </br>
+        
         <div id="whiteboxbg">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <h5 class="heading">Aptitude Progress</h5>
-                        <div class="card-body">
-                            <h4 class="small font-weight-bold">Diagramatic reasoning<span class="float-right">70%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-danger" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"><span class="sr-only">20%</span></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Numerical reasoning<span class="float-right">40%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only">40%</span></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Verbal reasoning<span class="float-right">60%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60%</span></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Logical Reasoning<span class="float-right">80%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Overall progress<span class="float-right">68%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"><span class="sr-only">100%</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col align-self-center">
-                        <canvas id="Apti"></canvas>
-                    </div>
-                </div>
+                <h5 class="text-dark mb-0" style="text-align: center;">Search Mentor</h5>
+                <br>
+                <form class="form-inline d-flex justify-content-center">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                    aria-label="Search">
+                    <button type="button" class="btn btn-success" style="margin-left: 1%;">Search</button>
+                </form>
+                <br>
             </div>
         </div>
-        </br>
-        <div id="whiteboxbg">
-            <div class="container-fluid">
-                <div class="row">
-                        <h5 class="heading">Personal Performance</h5>
-                </div>
-                <div class="row">
-                    <div class="col align-self-center">
-                        <h6 style="text-align: center;">Atendance Percentage: 79%</h6>
-                        <h6 style="text-align: center;">Staff rating: 8.3/10</h6>
-                        <h6 style="text-align: center;">Mentor rating: 7.0/10</h6>
-                        </br>
-                        <h6 style="text-align: center;">Mentor Remarks: Amazing student, can perform a bit better in academics</h6>
-                    </div>
-                    <div class="col">
-                        <h6 class='heading' style="text-align: center;">Your Performance Graph</h6>
-                        <canvas id="perpfo"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </br>
-        </br>
-        <div id="whiteboxbg">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <h5 class="heading">Test Overview</h5>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                              Select Test<span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu scrollable-menu" role="menu">
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col align-self-center">
-                        <p class="TOT" style="text-align: center;"><h6>Percentage: 69%</h6></br>
-                            <h6>Average Marks: 34/100</h6></br>
-                            <h6>Total Marks: 365/600</h6></p>
-                    </div>
-                    <div class="col-8">
-                        <canvas id="testO"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </br></br>
+
+
+        <!--Add content here Akhil and vishnu-->
+
+
+
     </div>
     
 

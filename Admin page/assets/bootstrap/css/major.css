@@ -1,0 +1,242 @@
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+	background: grey;
+	padding: 10%;
+  }
+  ::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to bottom right, #3dae9d, #75cd6f);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	background-image: linear-gradient(to bottom right, #75cd6f, #3dae9d);
+  }
+
+#whiteboxbg {
+    border-radius: 25px;
+    border: 1px solid rgb(180, 180, 180);
+    background: rgb(255, 255, 255);
+    padding: 20px; 
+    width: inherit;
+    height: inherit;  
+    box-shadow: 5px 5px 6px #c9c9c98a;
+    display: flex;
+  }
+  #inner {
+    float:left; 
+    clear: right;
+ }
+.heading{
+  text-align: left;
+  color: black;
+}
+.SM {
+  height: 100%;
+  width: 100%;
+}
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+.TOT {
+  position: inherit;
+  float: inline-end;
+}
+.whitebox{
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(180, 180, 180);
+    padding: 20px; 
+    width: inherit;
+    height: inherit;  
+}
+
+.plannercalbox{
+  background: rgb(255, 255, 255);
+  border-radius: 25px;
+  border: 1px solid rgb(180, 180, 180);
+    padding: 20px; 
+    width: inherit;
+    height: inherit;  
+}
+
+.todocalbox{
+	  padding: 20px; 
+	  width: inherit;
+	  height: inherit;  
+  }
+
+
+/* To-Do CSS */
+
+.tdl-holder{
+	margin:0px auto;
+	width: 100%;
+}
+
+.tdl-holder h2{
+	background-color: #129900;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color:#fff;
+	font-family:"Roboto Condensed", Arial, sans-serif;
+	font-size:16px;
+	font-weight: 100;
+	line-height: 56px;
+	padding-left: 15px;
+	margin:0;
+}
+
+.tdl-holder ul, .tdl-holder li {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.tdl-holder li{
+	background-color: #262e4c;
+	border-bottom:1px solid #1c2340;
+	color: #b1b2c9;
+}
+
+.tdl-holder li span{
+	margin-left:30px;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+		    transition: all .2s linear;	
+}
+
+.tdl-holder label{
+	cursor:pointer;
+	display:block;
+	line-height: 56px;
+	padding: 0 15px; 
+	position: relative;
+}
+
+.tdl-holder label:hover{
+	background-color: #2a3353;
+	color:#8284a3;
+}
+
+.tdl-holder label a{
+	background-color:#de3f53;
+	border-radius:50%;
+	color:#fff;
+	display:none;
+	float:right;
+	font-weight: bold;
+	line-height: normal;
+	height:16px;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	width:16px;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+		    transition: all .2s linear;	
+}
+
+.tdl-holder label:hover a{
+	display: block;
+}
+
+.tdl-holder label a:hover{	
+	background-color:#fff;
+	color:#de3f53;
+}
+
+.tdl-holder input[type="checkbox"]{
+	cursor: pointer;
+	opacity: 0;
+	position: absolute;
+}
+
+.tdl-holder input[type="checkbox"] + i{
+	background-color: #404a6e;
+	border-radius: 50%;
+	display: block;
+	height: 16px;
+	position: absolute;
+	top:20px;
+	width: 16px;	
+	z-index: 1;
+}
+
+.tdl-holder input[type="checkbox"]:checked + i::after{
+	background-color: rgb(37, 219, 0);
+	border-radius: 50%;
+	content: '';
+	display: block;
+	height:8px;
+	left:4px;
+	position: absolute;
+	top:4px;
+	width:8px;	
+	z-index: 2;
+}
+
+.tdl-holder input[type="checkbox"]:checked ~ span{	
+	color: rgb(24, 141, 0);
+  text-decoration: line-through;
+}
+
+.tdl-holder input[type="text"]{
+	background-color: #171d37;
+	border: none;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	box-shadow: inset 0 0 8px 0 #0e1329;
+	color: #464f72;
+	font-size:14px;
+	margin:0;
+	padding:20px 15px;
+	width:100%;
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+		    transition: all .2s linear;		
+}
+
+.tdl-holder input[type="text"]:hover{
+	color:#4c577f;
+}
+
+.tdl-holder input[type="text"]:focus{
+	color:#fff;
+}
+
+.tdl-holder ::-webkit-input-placeholder {color: #464f72;} /* WebKit browsers */
+.tdl-holder :-moz-placeholder 			{color: #464f72;} /* Mozilla Firefox 4 to 18 */
+.tdl-holder ::-moz-placeholder 			{color: #464f72;} /* Mozilla Firefox 19+ */
+.tdl-holder :-ms-input-placeholder 		{color: #464f72;} /* Internet Explorer 10+ */
+
+
+
+.tdl-holder li.remove{
+	-webkit-animation:collapseItem 300ms ease;
+			animation:collapseItem 300ms ease;
+	-webkit-transform-origin: 50% 0%;
+		-ms-transform-origin: 50% 0%;
+			transform-origin: 50% 0%;
+
+}
+
+.tdl-holder li.remove span{
+	color: #586186;
+	text-decoration: line-through;
+}
+
+@keyframes collapseItem {
+    0% 		{ -ms-transform: perspective(500px) rotateX(0deg);transform: perspective(500px) rotateX(0deg); 	}
+    100% 	{ -ms-transform: perspective(500px) rotateX(-90deg);transform: perspective(500px) rotateX(-90deg); }
+}
+
+@-webkit-keyframes collapseItem {
+    0% 		{ -webkit-transform: perspective(500px) rotateX(0deg); 	}
+    100% 	{ -webkit-transform: perspective(500px) rotateX(-90deg);}
+}
+
+
