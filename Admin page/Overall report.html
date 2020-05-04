@@ -133,7 +133,8 @@
 
     <div class="container-fluid">
         <div class="d-sm-flex justify-content-between align-items-center mb-4">
-            <h3 class="text-dark mb-0">Overall School Report</h3><button class="btn btn-primary btn-sm d-none d-sm-inline-block" onclick="downloadPdf()" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</button>
+            <h3 class="text-dark mb-0">Overall School Report</h3>
+            <button class="btn btn-primary btn-sm d-none d-sm-inline-block" onclick="downloadPdf()" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</button>
         </div>
         <div id="whiteboxbg">
            <div class="container-fluid">
@@ -235,21 +236,42 @@
             </div>
         </div>
         </br>
-        <!--<div id="whiteboxbg">
+        <div id="whiteboxbg">
             <div class="container-fluid">
                 <div class="row">
-                        <h5 class="heading">Personal Performance</h5>
+                    <div class="col align-self-start">
+                        <h5 class="heading">Mentor Average Rating</h5>
+                    </div>
+                    <div class="col align-self-end" style="text-align: center;">
+
+                        <div class="btn-group" style="align-items: center; margin-bottom: 5%;">
+                            <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Year
+                            </button>
+                            <div class="dropdown-menu" style="text-align: center;">
+                                <a class="dropdown-item" href="#">2016</a>
+                                <a class="dropdown-item" href="#">2017</a>
+                                <a class="dropdown-item" href="#">2018</a>
+                                <a class="dropdown-item" href="#">2019</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Current Year</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="row">
+                    
                     <div class="col align-self-center">
-                        <h6 style="text-align: center;">Atendance Percentage: 79%</h6>
-                        <h6 style="text-align: center;">Staff rating: 8.3/10</h6>
-                        <h6 style="text-align: center;">Mentor rating: 7.0/10</h6>
-                        </br>
-                        <h6 style="text-align: center;">Mentor Remarks: Amazing student, can perform a bit better in academics</h6>
+                        <h6 style="text-align: center;">Parent Average Rating: 79%</h6>
+                        <br>
+                        <h6 style="text-align: center;">Student Average rating: 8.3/10</h6>
+                        <br>
+                        <h6 style="text-align: center;">Overall Mentor rating: 7.0/10</h6>
+                        <br>
                     </div>
-                    <div class="col">
-                        <h6 class='heading' style="text-align: center;">Your Performance Graph</h6>
+                    <div class="col align-self-center">
+                        <h6 class='heading' style="text-align: center;">Mentor's Average Rating Graph</h6>
                         <canvas id="perpfo"></canvas>
                     </div>
                 </div>
@@ -260,41 +282,42 @@
         <div id="whiteboxbg">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
-                        <h5 class="heading">Test Overview</h5>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                              Select Test<span class="caret"></span>
+                    <div class="col align-self-start">
+                        <h5 class="heading">Student Activity</h5>
+                    </div>
+                    <div class="col align-self-end" style="text-align: center;">
+                        
+                        <div class="btn-group" style="align-items: center; margin-bottom: 5%;">
+                            <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Year
                             </button>
-                            <ul class="dropdown-menu scrollable-menu" role="menu">
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                            </ul>
-                          </div>
+                            <div class="dropdown-menu" style="text-align: center;">
+                                <a class="dropdown-item" href="#">2016</a>
+                                <a class="dropdown-item" href="#">2017</a>
+                                <a class="dropdown-item" href="#">2018</a>
+                                <a class="dropdown-item" href="#">2019</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Current Year</a>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
+                <div class="row">
                     <div class="col align-self-center">
-                        <p class="TOT" style="text-align: center;"><h6>Percentage: 69%</h6></br>
-                            <h6>Average Marks: 34/100</h6></br>
-                            <h6>Total Marks: 365/600</h6></p>
+                        <h6 style="text-align: center;">Student Average Attendance: 79%</h6>
+                        <br>
+                        <h6 style="text-align: center;">Student Average monthly activity percentage: 32%</h6>
+                        <br>
+                        <h6 style="text-align: center;">Growth rate: 5.4%</h6>
+                        <br>
                     </div>
-                    <div class="col-8">
+                    <div class="col">
                         <canvas id="testO"></canvas>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div> 
         </br></br>
     </div> 
 

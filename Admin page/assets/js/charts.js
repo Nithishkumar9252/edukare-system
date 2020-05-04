@@ -82,7 +82,7 @@ let perpfo = new Chart(LINE2, {
                 'rgba(0, 0, 0, 0)',
             ],
             borderColor: [
-                '#00E33E',
+                '#FFE033',
             ]
         }]
     },
@@ -102,16 +102,15 @@ let perpfo = new Chart(LINE2, {
 
 const LINE = document.getElementById("testO");
 let testO = new Chart(LINE, {
-    type: 'line',
+    type: 'bar',
     data: {
-        labels: ['Topic1', 'Topic2', 'topic3', 'Topic4', 'Topic5', 'Topic6'],
+        labels: ['class 6', 'class 7', 'class 8', 'class 9', 'class 10', 'class 11', 'class 12'],
         datasets: [{
-            label: 'Accuracy',
-            data: [45, 56, 43, 69, 22, 83],
-            backgroundColor: [
-                'rgba(24, 203, 0, 0.2)'
-            ],
-        }]
+            label: 'Performance Rate',
+            data: [45, 56, 43, 69, 58, 83, 54],
+            backgroundColor: '#A303B5',
+            borderColor: '#000000',
+            }]
     },
     options: {
         scales: {
