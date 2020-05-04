@@ -1,0 +1,79 @@
+h1{
+    margin: 30px;
+}
+h3{
+    color: black;
+    margin: 5px;
+}
+h5{
+    text-align: left;
+     margin: 5px;
+}
+.Men{
+    font-size: 80px;text-align: center;
+}
+.rounded-circle.mb-3.mt-4{
+
+    border: 5px solid #6bddcc;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+
+}
+#profile.card.mb-3:hover{
+
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(to bottom right, #79f06e, #adf7eb);
+    transition: 0.4s ease-in-out;
+
+}
+.btn.btn-primary.btn-sm{
+    color:white;
+    font-weight: 700;
+    background-color: #6bddcc;
+    border: 1px solid #6bddcc;
+    width: 120px;
+
+    height: 50px;
+
+}
+.card-header.py-3{
+    font-weight: 1000;
+    font-size: x-large;
+}
+.card-header.py-3:hover{
+    background-image: linear-gradient(to bottom right, #79f06e, #adf7eb);
+    
+    transition: 0.4s ease-in-out;
+
+}
+#user.card-body:hover{
+    background-image: linear-gradient(to bottom right, white,white);
+
+
+}
+#user.card-body{
+
+    color: black;
+    font-weight: 500;
+
+}
+#user2.card-body{
+    color: black;
+    font-weight: 500;
+}
+#perfo.card-header.py-3{
+    padding: 0px 0px 0px 0px !important;
+    border: 0px solid white;
+    
+}
+#perfo.card-header.py-3:hover{
+    border: 0px solid white;
+}
+#pro.card.shadow.mb-4{
+    padding-top: 0px 0px 0px 0px !important;
+}
+#card.card-body{
+    height: 300px;
+
+}
