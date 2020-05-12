@@ -4,10 +4,15 @@ import './CSS/NavigationBar.css'
 
 class NavigationBar extends React.Component{
 
+  state={
+    isToggled:true,
+  }
+
   render(){
+    console.log(this.state.isToggled)
     return (
       <div id="wrapper">
-          <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+          <nav className={this.state.isToggled?"navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled":"navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0"}>
               <div class="container-fluid d-flex flex-column p-0">
                   <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="/">
                       <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
@@ -21,13 +26,14 @@ class NavigationBar extends React.Component{
                       <li class="nav-item" role="presentation"><a class="nav-link" href=""><i class="far fa-user-circle"></i><span>Login</span></a></li>
                       <li class="nav-item" role="presentation"><a class="nav-link" href=""><i class="fas fa-user-circle"></i><span>Register</span></a></li>
                   </ul>
-                  <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+                  <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button" onClick={() => this.setState({isToggled: !this.state.isToggled})} ></button></div>
+
               </div>
           </nav>
           <div class="d-flex flex-column" id="content-wrapper">
               <div id="content">
                   <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-                      <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                      <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button" onClick={() => this.setState({isToggled: !this.state.isToggled})}><i class="fas fa-bars"></i></button>
 
                           <ul class="nav navbar-nav flex-nowrap ml-auto">
                               <li class="nav-item dropdown no-arrow mx-1" role="presentation">
