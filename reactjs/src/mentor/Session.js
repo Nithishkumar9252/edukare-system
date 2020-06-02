@@ -2,7 +2,7 @@ import React from 'react';
 import Insights from './Insights';
 import Perfo from './Performance';
 import Card from './Prof_card1';
-import VNav from './V_Nav';
+import VNav from './V_Nav1';
 import HNav from './H_Nav';
 import Details from './Session_det'
 import Note from './NotetoPar'
