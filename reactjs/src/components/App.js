@@ -1,5 +1,8 @@
 import React from 'react';
 import NavigationBar from './NavigationBar.js';
+import Mentor from '../mentor/Mentor';
+import Profile from '../mentor/Profile'
+import Session from '../mentor/Session';
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 
@@ -9,7 +12,11 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <NavigationBar />
+          <Route exact path="/" component={NavigationBar} />
+          
+           
+           <Route  path="/Mentor" component={Session} />
+           <Route path="/Profile" component={Profile}/>
           </Switch>
         </div>
       </Router>
