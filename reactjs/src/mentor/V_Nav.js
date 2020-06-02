@@ -1,12 +1,14 @@
 
-import React from 'react';
+import React,{useState} from 'react';
 
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
 
 function V_Nav() {
+  
+  const [isToggled,setToggle]=useState(true)
   return (
-    <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+    <nav className={isToggled?"navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 toggled":"navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0"}>
     <div class="container-fluid d-flex flex-column p-0">
         <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
             <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
@@ -17,7 +19,7 @@ function V_Nav() {
             <li class="nav-item" role="presentation"><a class="nav-link active" href="#"><i class="fas fa-eye"></i><span>Profile</span></a></li>
             <li class="nav-item" role="presentation"><a class="nav-link" href="/Mentor"><i class="fas fa-brain"></i><span>Take Session</span></a></li>
         </ul>
-        <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+        <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button" onClick={() =>setToggle(!isToggled)}></button></div>
     </div>
 </nav>
   );
