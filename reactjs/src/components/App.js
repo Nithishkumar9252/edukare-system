@@ -9,11 +9,11 @@ import Mentor_Parent from '../Parent/Mentor';
 import Profile from '../mentor/Profile'
 import Session from '../mentor/Session';
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App" >
+    <div className="App">
       <Router>
         <div>
           <Switch>

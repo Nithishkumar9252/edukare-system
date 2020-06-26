@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/NavigationBar.css'
+import '../components/globalCSS/NavigationBar.css'
 
 
 class NavigationBar extends React.Component{

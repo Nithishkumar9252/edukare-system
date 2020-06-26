@@ -1,0 +1,19 @@
+body{
+  background-image: linear-gradient(to left, #75cd6f, #3dae9d);
+}
+
+.btn-user{
+  background-image: linear-gradient(to right, #75cd6f, #3dae9d);
+  border:0;
+}
+
+.text-center{
+  color: #75cd6f;
+}
+.container{
+  margin-top: 8%;
+}
+
+.form-check{
+  text-align: left;
+}

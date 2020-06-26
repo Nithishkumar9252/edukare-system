@@ -1,0 +1,13 @@
+.navbar{
+  background-image: linear-gradient(to bottom right, #75cd6f, #3dae9d);
+  color: grey;
+  box-shadow: 2.5px 0px 10px;
+}
+.toggled{
+  transition: 0.5s ease;
+}
+.hohrizontal{
+  width:1;
+  size: 100;
+  color: grey;
+}
