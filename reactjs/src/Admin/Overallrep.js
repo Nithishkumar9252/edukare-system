@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
+import React from 'react';
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Product name - Report</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/major.css">   
-</head>
+function Overall() {
 
-<body id="page-top">
+    return(
+        <div>
+       
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0">
@@ -19,10 +12,11 @@
                     <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
                     <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
                 </a>
-                <hr class="sidebar-divider my-0">
+                <hr class="sidebar-divider my-0"/>
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="Report.html"><i class="fas fa-check-circle"></i><span>Report</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="./mentor page for student/studentmentor.html"><i class="fas fa-chalkboard-teacher"></i><span>Mentors</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="Overall report.html"><i class="fas fa-check-circle"></i><span>Overall Report</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="StudentDetails.html"><i class="fas fa-graduation-cap"></i><span>Students/class</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Mentor.html"><i class="fas fa-chalkboard-teacher"></i><span>Mentors</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -31,28 +25,15 @@
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <div class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="dropdown">
-                                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Select Student
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Akhil</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Aaris</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Yasaswi</a>
-                                </div>
-                              </div>
-                        </div>
+                        
                         <ul class="nav navbar-nav flex-nowrap ml-auto">
-                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-male"></i></a>
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" role="menu" aria-labelledby="searchDropdown">
-                                    <a>Select Student</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Akhil</a>
-                                    <a class="dropdown-item" href="#">Aaris</a>
-                                    <a class="dropdown-item" href="#">Yasaswi</a>
+                                    <form class="form-inline mr-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."/>
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow mx-1" role="presentation">
@@ -92,7 +73,7 @@
                                         role="menu">
                                         <h6 class="dropdown-header">Messages</h6>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg"/>
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -101,7 +82,7 @@
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg"/>
                                                 <div class="status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -110,7 +91,7 @@
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg"/>
                                                 <div class="bg-warning status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -119,7 +100,7 @@
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg"/>
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
@@ -132,7 +113,7 @@
                             </li>
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow" role="presentation">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Parent name</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Student Name</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"/></a>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Settings</a>
                                         <a class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Activity log</a>
                                             <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a></div>
@@ -145,24 +126,40 @@
 
     <div class="container-fluid">
         <div class="d-sm-flex justify-content-between align-items-center mb-4">
-            <h3 class="text-dark mb-0">Dashboard</h3><button class="btn btn-primary btn-sm d-none d-sm-inline-block" onclick="downloadPdf()" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</button>
+            <h3 class="text-dark mb-0">Overall School Report</h3>
+            <button class="btn btn-primary btn-sm d-none d-sm-inline-block" onclick="downloadPdf()" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</button>
         </div>
         <div id="whiteboxbg">
            <div class="container-fluid">
                 <div class="row">
                     <div class="col align-self-start">
-                            <h5 class="heading">Academic Performance</h5>    
+                            <h5 class="heading"> Overall Schoool Academic Performance</h5>    
                     </div>
-                    <div class="col align-self-center" style="text-align: center;">
-                        <div class="btn-group" style="text-align: center;">
+                    <div class="col align-self-center" style={{textalign: "center"}}>
+                        <div class="btn-group" style={{textalign: "center"}}>
                             <button class="btn btn-success btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Select Exam
                             </button>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu" style={{textalign: "center"}}>
                                 <a class="dropdown-item" href="#">MID-1</a>
                                 <a class="dropdown-item" href="#">MID-2</a>
                                 <a class="dropdown-item" href="#">Half-Yearly</a>
                                 <a class="dropdown-item" href="#">Final</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Overall Performance</a>
+                            </div>
+                            <div class="btn-group" style={{alignitems: "center", marginleft: "10%"}}>
+                                <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Select Year
+                                </button>
+                                <div class="dropdown-menu" style={{textalign: "center"}}>
+                                    <a class="dropdown-item" href="#">2016</a>
+                                    <a class="dropdown-item" href="#">2017</a>
+                                    <a class="dropdown-item" href="#">2018</a>
+                                    <a class="dropdown-item" href="#">2019</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Current Year</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,144 +171,163 @@
                         </div>
                     </div>
                     <div class="col align-self-end">
-                        <h6 style="text-align: center;">Percentage: 69%</h6>
-                        <h6 style="text-align: center;">Average Marks: 34/100</h6>
-                        <h6 style="text-align: center;">Total Marks: 365/600</h6>
-                        </br>
-                        <h6 style="text-align: center;">Remarks: Average, need to improve a lot</h6>
+                        <h6 style={{textalign: "center"}}>Overall School Percentage: 69%</h6>
+                        <h6 style={{textalign: "center"}}>Pass Percentage: 69%</h6>
+                        <h6 style={{textalign: "center"}}>Fail Percentage: 69%</h6>
                     </div>
                 </div>
            </div>
         </div>    
-        </br>
+        <br></br>
         <div id="whiteboxbg">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <h5 class="heading">Aptitude Progress</h5>
+                        <h5 class="heading">Overall School Aptitude</h5>
                         <div class="card-body">
                             <h4 class="small font-weight-bold">Diagramatic reasoning<span class="float-right">70%</span></h4>
                             <div class="progress mb-4">
-                                <div class="progress-bar bg-danger" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"><span class="sr-only">20%</span></div>
+                                <div class="progress-bar bg-danger" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width: "70%"}}><span class="sr-only">20%</span></div>
                             </div>
                             <h4 class="small font-weight-bold">Numerical reasoning<span class="float-right">40%</span></h4>
                             <div class="progress mb-4">
-                                <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only">40%</span></div>
+                                <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style={{width: "40%"}}><span class="sr-only">40%</span></div>
                             </div>
                             <h4 class="small font-weight-bold">Verbal reasoning<span class="float-right">60%</span></h4>
                             <div class="progress mb-4">
-                                <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60%</span></div>
+                                <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"  style={{width: "60%"}}><span class="sr-only">60%</span></div>
                             </div>
                             <h4 class="small font-weight-bold">Logical Reasoning<span class="float-right">80%</span></h4>
                             <div class="progress mb-4">
-                                <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"  style={{width: "80%"}}><span class="sr-only">80%</span></div>
                             </div>
                             <h4 class="small font-weight-bold">Overall progress<span class="float-right">68%</span></h4>
                             <div class="progress mb-4">
-                                <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"><span class="sr-only">100%</span></div>
+                                <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style={{width: "68%"}}><span class="sr-only">100%</span></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col align-self-center">
+                    <div class="col align-self-center" style={{textalign: "center"}}>
+
+                        <div class="btn-group" style={{alignitems: "center", marginbottom: "10%"}}>
+                            <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Year
+                            </button>
+                            <div class="dropdown-menu" style={{textalign: "center"}}>
+                                <a class="dropdown-item" href="#">2016</a>
+                                <a class="dropdown-item" href="#">2017</a>
+                                <a class="dropdown-item" href="#">2018</a>
+                                <a class="dropdown-item" href="#">2019</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Current Year</a>
+                            </div>
+                        </div>
+
                         <canvas id="Apti"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-        </br>
+        <br></br>
         <div id="whiteboxbg">
             <div class="container-fluid">
                 <div class="row">
-                        <h5 class="heading">Personal Performance</h5>
+                    <div class="col align-self-start">
+                        <h5 class="heading">Mentor Average Rating</h5>
+                    </div>
+                    <div class="col align-self-end" style={{textalign: "center"}}>
+
+                        <div class="btn-group" style={{alignitems: "center", marginbottom: "5%"}}>
+                            <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Year
+                            </button>
+                            <div class="dropdown-menu" style={{textalign: "center"}}>
+                                <a class="dropdown-item" href="#">2016</a>
+                                <a class="dropdown-item" href="#">2017</a>
+                                <a class="dropdown-item" href="#">2018</a>
+                                <a class="dropdown-item" href="#">2019</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Current Year</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="row">
+                    
                     <div class="col align-self-center">
-                        <h6 style="text-align: center;">Atendance Percentage: 79%</h6>
-                        <h6 style="text-align: center;">Staff rating: 8.3/10</h6>
-                        <h6 style="text-align: center;">Mentor rating: 7.0/10</h6>
-                        </br>
-                        <h6 style="text-align: center;">Mentor Remarks: Amazing student, can perform a bit better in academics</h6>
+                        <h6 style={{textalign: "center"}}>Parent Average Rating: 79%</h6>
+                        <br></br>
+                        <h6 style={{textalign: "center"}}>Student Average rating: 8.3/10</h6>
+                        <br></br>
+                        <h6 style={{textalign: "center"}}>Overall Mentor rating: 7.0/10</h6>
+                        <br></br>
                     </div>
-                    <div class="col">
-                        <h6 class='heading' style="text-align: center;">Your Performance Graph</h6>
+                    <div class="col align-self-center">
+                        <h6 class='heading' style={{textalign: "center"}}>Mentor's Average Rating Graph</h6>
                         <canvas id="perpfo"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-        </br>
-        </br>
+        <br/>
+        <br/>
         <div id="whiteboxbg">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
-                        <h5 class="heading">Test Overview</h5>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                              Select Test<span class="caret"></span>
+                    <div class="col align-self-start">
+                        <h5 class="heading">Student Activity</h5>
+                    </div>
+                    <div class="col align-self-end" style={{textalign: "center"}}>
+                        
+                        <div class="btn-group" style={{alignitems: "center", marginbottom: "5%"}}>
+                            <button class="btn btn-info btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Year
                             </button>
-                            <ul class="dropdown-menu scrollable-menu" role="menu">
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                              <li><a href="#">Test Name - Topic</a></li>
-                            </ul>
-                          </div>
+                            <div class="dropdown-menu" style={{textalign: "center"}}>
+                                <a class="dropdown-item" href="#">2016</a>
+                                <a class="dropdown-item" href="#">2017</a>
+                                <a class="dropdown-item" href="#">2018</a>
+                                <a class="dropdown-item" href="#">2019</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Current Year</a>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
+                <div class="row">
                     <div class="col align-self-center">
-                        <p class="TOT" style="text-align: center;"><h6>Percentage: 69%</h6></br>
-                            <h6>Average Marks: 34/100</h6></br>
-                            <h6>Total Marks: 365/600</h6></p>
+                        <h6 style={{textalign: "center"}}>Student Average Attendance: 79%</h6>
+                        <br></br>
+                        <h6 style={{textalign: "center"}}>Student Average monthly activity percentage: 32%</h6>
+                        <br></br>
+                        <h6 style={{textalign: "center"}}>Growth rate: 5.4%</h6>
+                        <br></br>
                     </div>
-                    <div class="col-8">
+                    <div class="col">
                         <canvas id="testO"></canvas>
                     </div>
                 </div>
             </div>
-        </div>
-        </br></br>
-    </div>
+        </div> 
+        <br/><br/>
+    </div> 
+
     
+
+
+
+
+
+
 </div></div></div>
+    <div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     
+</div>
+    )
+    
+}
 
 
-
-
-
-
-
-
-    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
-    <script src="assets/js/pdf.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/Chart.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/charts.js"></script>
-	<style>
-		.navbar{
-			background-image: linear-gradient(to bottom right, #75cd6f, #3dae9d);
-		}
-    .navbar{
-      transition: 1s;
-    }
-    .mx-3{
-      transition: 1s;
-    }
-	</style>
-</body>
-
-</html>
+export default Overall;
