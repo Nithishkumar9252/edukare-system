@@ -1,10 +1,20 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const body_parser = require("body-parser");
 const portNumber = process.env.PORT;
+const mongoose = require("mongoose");
+const jwt = require("jsonwebtoken");
+const authenticate = require("./authenticateJWT");
+//connection with database
+mongoose.connect(
+  process.env.MONGOOSE_URL,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  () => console.log("connected to database")
+);
 
 const loginHelper = require("./loginHelper");
+//routes
+const authRoute = require("./routes/auth");
 
 const user = "yasaswiraj";
 const password = "helloworld";
@@ -16,11 +26,14 @@ var allowCrossDomain = function (req, res, next) {
   next();
 };
 
+//middlewares
 app.use(allowCrossDomain);
-app.use(body_parser.json());
-app.use(body_parser.urlencoded({ extended: false }));
+app.use(express.json());
 
-app.get("/", function (req, res) {
+//route middlewares
+app.use("/auth", authRoute);
+
+app.get("/bleh", authenticate.authenticateToken, function (req, res) {
   res.send("Express Baby!!");
 });
 
