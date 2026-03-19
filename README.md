@@ -1,6 +1,6 @@
 # Edukare-System Platform
 
-A simple full‑stack project containing HTML prototypes, a React frontend, and a Node.js backend.
+This project is a full‑stack web application designed to streamline communication and management between Mentors, Parents, Admins, and Students. It combines early HTML prototypes, a React-based frontend, and a secure Node.js backend to create a scalable and organized development workflow.
 
 ---
 
